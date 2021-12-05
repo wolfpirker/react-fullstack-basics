@@ -7,7 +7,6 @@ import Header from './components/header';
 const App = () => (
     <>
         <Header />
-        The dat is {Date.now()}
     </>
 )
 
