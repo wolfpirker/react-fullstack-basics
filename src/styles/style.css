@@ -19,6 +19,14 @@ header input {
     margin: 20px 0px;
 }
 
+.active {
+    background: #03a9fa;
+}
+
+.inactive {
+    background: #CCCCCC;
+}
+
 .news_item {
     padding: 20px;
     box-sizing: border-box;

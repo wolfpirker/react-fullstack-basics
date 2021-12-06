@@ -1071,6 +1071,112 @@ by its title</li>
 </ul>
 <div>More on styling</div>
 </div>
+<div>
+<ul>
+<li>how to use the state, to change stylings</li>
+<li>we can use it tenary</li>
+<ul>
+<li>
+<div style=
+"color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: 'Droid Sans Mono', monospace, monospace, 'Droid Sans Fallback'; font-size: 14px; line-height: 19px; white-space: pre;">
+<span style="color: #808080;">&lt;</span><span style=
+"color: #569cd6;">header</span> <span style=
+"color: #9cdcfe;">style</span>=<span style=
+"color: #569cd6;">{</span>{<span style=
+"color: #9cdcfe;">background</span><span style=
+"color: #9cdcfe;">:</span> <span style=
+"color: #ce9178;">`</span><span style=
+"color: #569cd6;">${this</span>.<span style=
+"color: #9cdcfe;">state</span>.<span style=
+"color: #9cdcfe;">active</span> ? <span style=
+"color: #ce9178;">'red'</span>: <span style=
+"color: #ce9178;">'blue'</span><span style=
+"color: #569cd6;">}</span><span style=
+"color: #ce9178;">`</span>}<span style=
+"color: #569cd6;">}</span><span style=
+"color: #808080;">&gt;</span></div>
+</li>
+<li>this is the object that contains the information so we use
+double {}</li>
+</ul>
+<li>we want to change the background of the header: depending on
+whether the state in header is active or false</li>
+<li>what is ternary?</li>
+<ul>
+<li>is like a if else statement</li>
+<li>such state is called ternary - see also in code example
+above:</li>
+<ul>
+<li>
+<div style=
+"color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: 'Droid Sans Mono', monospace, monospace, 'Droid Sans Fallback'; font-size: 14px; line-height: 19px; white-space: pre;">
+<span style="color: #569cd6;">this</span>.<span style=
+"color: #9cdcfe;">state</span>.<span style=
+"color: #9cdcfe;">active</span> ? <span style=
+"color: #ce9178;">""</span> : <span style=
+"color: #ce9178;">""</span></div>
+</li>
+</ul>
+</ul>
+<li>to check whether the input has a value, we can use:</li>
+<ul>
+<li>
+<div style=
+"color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: 'Droid Sans Mono', monospace, monospace, 'Droid Sans Fallback'; font-size: 14px; line-height: 19px; white-space: pre;">
+<span style="color: #569cd6;">const</span> <span style=
+"color: #4fc1ff;">value</span> = <span style=
+"color: #9cdcfe;">event</span>.<span style=
+"color: #9cdcfe;">target</span>.<span style=
+"color: #9cdcfe;">value</span> === <span style=
+"color: #ce9178;">''</span> ? <span style=
+"color: #ce9178;">'active'</span> : <span style=
+"color: #ce9178;">'not-active'</span>;</div>
+</li>
+</ul>
+<li>Note: the inline styling we can replace with classes:</li>
+<ul>
+<li>before:</li>
+<ul>
+<li>
+<div style=
+"color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: 'Droid Sans Mono', monospace, monospace, 'Droid Sans Fallback'; font-size: 14px; line-height: 19px; white-space: pre;">
+<span style="color: #808080;">&lt;</span><span style=
+"color: #569cd6;">header</span> <span style=
+"color: #9cdcfe;">style</span>=<span style=
+"color: #569cd6;">{</span>{ <span style=
+"color: #9cdcfe;">background</span><span style=
+"color: #9cdcfe;">:</span> <span style=
+"color: #ce9178;">`</span><span style=
+"color: #569cd6;">${this</span>.<span style=
+"color: #9cdcfe;">state</span>.<span style=
+"color: #9cdcfe;">active</span> ? <span style=
+"color: #ce9178;">'red'</span> : <span style=
+"color: #ce9178;">'blue'</span><span style=
+"color: #569cd6;">}</span><span style="color: #ce9178;">`</span>
+}<span style="color: #569cd6;">}</span><span style=
+"color: #808080;">&gt;</span></div>
+</li>
+</ul>
+<li>after:</li>
+<ul>
+<li>
+<div style=
+"color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: 'Droid Sans Mono', monospace, monospace, 'Droid Sans Fallback'; font-size: 14px; line-height: 19px; white-space: pre;">
+<span style="color: #808080;">&lt;</span><span style=
+"color: #569cd6;">header</span> <span style=
+"color: #9cdcfe;">className</span>=<span style=
+"color: #569cd6;">{this</span>.<span style=
+"color: #9cdcfe;">state</span>.<span style=
+"color: #9cdcfe;">active</span><span style=
+"color: #569cd6;">}</span><span style=
+"color: #808080;">&gt;</span></div>
+</li>
+</ul>
+<li>we can also do animations just by swapping classes</li>
+</ul>
+<li><br /></li>
+</ul>
+</div>
 <div><br /></div>
 <div><br /></div>
 <div><br /></div>
@@ -1081,9 +1187,9 @@ by its title</li>
 </div>
 </div>
 </en-note>]]></Content>
-        <ContentLength>37963</ContentLength>
+        <ContentLength>42134</ContentLength>
         <Created>1638387889846</Created>
-        <Updated>1638818312937</Updated>
+        <Updated>1638822561959</Updated>
         <Active>true</Active>
         <UpdateSequenceNumber>0</UpdateSequenceNumber>
         <NotebookGuid>d0d14f74-6b64-483b-8f9d-b6474c5eb883</NotebookGuid>
