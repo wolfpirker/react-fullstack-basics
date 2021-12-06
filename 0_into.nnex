@@ -1012,8 +1012,66 @@ constructor</li>
 <li>events, classes, functions states, renders, props</li>
 </ul>
 </ul>
-<div><br /></div>
+<div>React Children</div>
 </div>
+<div>
+<ul>
+<li>example: what happens if we want to pass some jsx as
+property!?</li>
+<ul>
+<li>one way: we write a function which returns jsx and we pass it
+as a property; could work</li>
+<li>another way: we can add children content to components like
+this...</li>
+<ul>
+<li>in our index.js:<br />
+<div style=
+"color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: 'Droid Sans Mono', monospace, monospace, 'Droid Sans Fallback'; font-size: 14px; line-height: 19px; white-space: pre;">
+<div style=
+"font-family: 'Droid Sans Mono', monospace, monospace, 'Droid Sans Fallback'; line-height: 19px;">
+<div><span style="color: #808080;">&lt;</span><span style=
+"color: #4ec9b0;">NewsList</span></div>
+<div>
+<blockquote style=
+"margin: 0 0 0 40px; border: none; padding: 0px;"><span style=
+"color: #9cdcfe;">news</span>=<span style=
+"color: #569cd6;">{this</span>.<span style=
+"color: #9cdcfe;">state</span>.<span style=
+"color: #9cdcfe;">news</span><span style=
+"color: #569cd6;">}</span><span style=
+"color: #808080;">&gt;</span></blockquote>
+</div>
+<div><span style="color: #808080;">&lt;</span><span style=
+"color: #569cd6;">br</span> <span style=
+"color: #808080;">/&gt;</span></div>
+<div><span style="color: #808080;">&lt;</span><span style=
+"color: #569cd6;">h1</span><span style=
+"color: #808080;">&gt;</span>I am a children<span style=
+"color: #808080;">&lt;/</span><span style=
+"color: #569cd6;">h1</span><span style=
+"color: #808080;">&gt;</span></div>
+<div><span style="color: #808080;">&lt;/</span><span style=
+"color: #4ec9b0;">NewsList</span><span style=
+"color: #808080;">&gt;</span></div>
+</div>
+</div>
+</li>
+<li>the default in React is then to pass in the data through a
+property called <span style=
+"background-color: rgb(255, 255, 0);">children</span> <span style=
+"background-color: rgb(255, 255, 255);">within props</span></li>
+</ul>
+<li>this is getting more complex when we have an application with
+authentication; we then need ajaxs</li>
+<li>however main purpose of children props: passing some
+content</li>
+</ul>
+<li>in the next section: we want to filter all the different posts,
+by its title</li>
+</ul>
+<div>More on styling</div>
+</div>
+<div><br /></div>
 <div><br /></div>
 <div><br /></div>
 <div><br /></div>
@@ -1023,9 +1081,9 @@ constructor</li>
 </div>
 </div>
 </en-note>]]></Content>
-        <ContentLength>35762</ContentLength>
+        <ContentLength>37963</ContentLength>
         <Created>1638387889846</Created>
-        <Updated>1638816716213</Updated>
+        <Updated>1638818312937</Updated>
         <Active>true</Active>
         <UpdateSequenceNumber>0</UpdateSequenceNumber>
         <NotebookGuid>d0d14f74-6b64-483b-8f9d-b6474c5eb883</NotebookGuid>
