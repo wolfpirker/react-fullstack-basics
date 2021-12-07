@@ -1399,21 +1399,87 @@ getDerivedStateFromProps</span><span style=
 <li>all components should render something</li>
 <li>if you are having a constructor explicitly: you should put your
 state inside of the constructor!</li>
+<li>the methods are called "<span style=
+"background-color: rgb(255, 255, 0);">lifecycle hooks</span>"</li>
 </ul>
 <li><br /></li>
 </ul>
 </div>
 <div>Lifecycles part 2</div>
+<div>
+<ul>
+<li>when the state changes, some of the lifecycles are called
+again</li>
+<li>there is specific updating lifecycles</li>
+<ul>
+<li>they are getting triggered when you update components</li>
+<li>the first: <span style=
+"background-color: rgb(255, 255, 0);">shouldComponentUpdate()</span></li>
+<ul>
+<li>returns true or false</li>
+<li>trigger on a specific action, in a specific order</li>
+<li>it is getting called before the render!</li>
+<li>you can use this method with two specific properties:
+<span style="background-color: rgb(255, 255, 0);">nextProps,
+nextState</span></li>
+<li>this.state and nextState is different in this method!</li>
+</ul>
+<li>another lifecycle: <span style=
+"background-color: rgb(255, 255, 0);">componentDidUpdate()</span></li>
+<ul>
+<li>similar to componentDidMount()</li>
+<li>triggers if component was updated</li>
+<li>props of that method: <span style=
+"background-color: rgb(255, 255, 0);">prevProps,
+prevState</span></li>
+</ul>
+<li>another: <span style=
+"background-color: rgb(255, 255, 0);">getSnapshotBeforeUpdate()</span></li>
+<ul>
+<li>comes with <span style=
+"background-color: rgb(255, 255, 0);">prevProps,
+prevState</span></li>
+<li>it should return something, e.g. null</li>
+<li>you could store or return something and store it in memory to
+use later</li>
+</ul>
+</ul>
+<li>about the previously mentioned lifecycle:</li>
+<ul>
+<li><span style=
+"font-family: 'Droid Sans Mono', monospace, monospace, 'Droid Sans Fallback'; font-size: 14px; white-space: pre; background-color: rgb(30, 30, 30); color: rgb(220, 220, 170);">
+getDerivedStateFromProps</span><span style=
+"color: rgb(212, 212, 212); font-family: 'Droid Sans Mono', monospace, monospace, 'Droid Sans Fallback'; font-size: 14px; white-space: pre; background-color: rgb(30, 30, 30);">()</span><br />
+</li>
+<ul>
+<li>it will interact with current props and state</li>
+<li>available arguments: props, state</li>
+</ul>
+</ul>
+<li>random Notes:</li>
+<ul>
+<li>most of the time you create a React application:</li>
+<ul>
+<li>you don't need these lifecycle</li>
+<li><span style="background-color: rgb(255, 255, 0);">but at some
+point you might need it!</span></li>
+<li><span style="background-color: rgb(255, 255, 0);">depends on
+your application</span></li>
+</ul>
+</ul>
+</ul>
+<div>React Hooks intro</div>
 <div><br /></div>
 </div>
 </div>
 </div>
 </div>
 </div>
+</div>
 </en-note>]]></Content>
-        <ContentLength>51738</ContentLength>
+        <ContentLength>54147</ContentLength>
         <Created>1638387889846</Created>
-        <Updated>1638891651632</Updated>
+        <Updated>1638894071307</Updated>
         <Active>true</Active>
         <UpdateSequenceNumber>0</UpdateSequenceNumber>
         <NotebookGuid>d0d14f74-6b64-483b-8f9d-b6474c5eb883</NotebookGuid>
